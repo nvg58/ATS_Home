@@ -1,40 +1,28 @@
 @import url('custom.less');
 
-body { 
-	// padding-top: 70px; 
-	// position: relative;
-}
-
 /**=General
 **************************************************************/
 .blue-color {
 	color: @blue-color;
 }
-
 .dark-blue-color {
 	color: @dark-blue-color;
 }
-
 .green-color {
 	color: @green-color;
 }
-
 .gray-color {
 	color: @gray-color;
 }
-
 .light-gray-color {
 	color: @light-gray-color;
 }
-
 .white-color {
 	color: white;
 }
-
 .bg-green {
 	background-color: @green-color;
 }
-
 .bg-blue {
 	background-color: @blue-color;
 }
@@ -101,11 +89,6 @@ body {
 			width: 100%;					
 		}
 	}	
-	// .border-image('../img/top-bar-shadow.png');
-	// border-bottom-style: solid;	
-	// .top-bar-shadow > img {
-	// 	padding-left: 23%;
-	// }
 }
 
 #top-bar:after {
@@ -116,6 +99,7 @@ body {
 	height: 16px;
 	margin-left: 25%;
 }
+
 
 /**=Navigation
 **************************************************************/
@@ -155,6 +139,7 @@ body {
 		background-color: transparent;		
 		.scale(1.1, 1.1);
 	}
+
 	/*= Dropdown
 	**********************************************************/
 	.dropdown-menu {		
@@ -195,13 +180,6 @@ body {
 	}
 }
 
-// #nav:after {
-// 	// background: url('../img/nav-shadow.png') no-repeat;
-// 	display: block;		
-// 	content: " ";
-// 	height: 14px;	
-// }
-
 
 /**=Banner
 **************************************************************/
@@ -236,32 +214,6 @@ body {
 		.scale(1.05);		
 	    .transition(.5s ease-in-out);	    
 	}
-	// Inset shadow
-	// .item {	    
-	//     padding: 0;
-	//     position: relative;
-	//     overflow: hidden;
-	//     -webkit-background-size: cover;
-	//     -moz-background-size: cover;
-	//     -o-background-size: cover;
-	//     background-size: cover; 
-	// }
-	// .item img {
-	//     height: auto;
-	//     width: 100%;
-	//     margin: 0 auto; 
-	//     display: block;
-	// }
-	// .item::before {
-	//     -webkit-box-shadow: inset 0 0 10px @gray-color;
-	//     box-shadow: inset 0 0 10px @gray-color;
-	//     position: absolute;
-	//     top: 0;
-	//     left: 0;
-	//     width: 100%;
-	//     height: 100%;
-	//     content: "";
-	// }
 }
 
 /**=Solution Row
@@ -351,7 +303,6 @@ body {
 		.carousel-indicators li {
 			background-color: @darker-gray-color;
 			border: 1px solid @darker-gray-color;
-			// margin: 0;
 		}
 		.carousel-indicators li.active {
 			background-color: @green-color;
@@ -420,6 +371,7 @@ body {
 		.scale(1.1);
 	}
 }
+
 #newsletter:after {
 	content: " ";
 	background-color: white;
@@ -428,7 +380,7 @@ body {
 }
 
 
-/**=Newsletter
+/**=Footer
 **************************************************************/
 #footer {
 	.black-gradient-bg();
@@ -452,7 +404,7 @@ body {
 }
 
 
-/**=Cpoyright
+/**=Copyright
 **************************************************************/
 #copyright {
 	padding: 25px 0;

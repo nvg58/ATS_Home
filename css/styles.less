@@ -1,4 +1,6 @@
 @import url('custom.less');
+@import url('bootstrap/bootstrap.less');
+@import url('animate.min.less');
 
 /**=General
 **************************************************************/
@@ -103,7 +105,7 @@
 
 /**=Navigation
 **************************************************************/
-#nav {	
+#nav {		
 	padding-top: 54px;	
 	.font-family-raleway-regular();
 	font-size: 14px;
@@ -143,7 +145,7 @@
 	/*= Dropdown
 	**********************************************************/
 	.dropdown-menu {		
-		left: -287px;
+		left: -270%;
 		background-color: @nav-li-color;	
 		box-shadow: inset 0 4px 3px -3px gray;
 		.nav-li {
@@ -174,10 +176,11 @@
 		}
 		.nav-li:last-child .nav-li-link {
 			padding-top: 25px;
-		}
+		}		
 	}	
 	.dropdown:hover .dropdown-menu {
-	    display: block;	  	    
+	    display: block;	  	 	    
+    	.animation(fadeIn 1s);
 	}
 }
 
@@ -329,12 +332,13 @@
 	p {
 		padding-bottom: 10px;
 	}
+	.row {
+		margin: 0;
+	}
 	.stay-update { 
 		position: relative; 
 		.blue-gradient-bg(); 
 		padding-left: 100px;
-		// width: 53%;
-		// margin-left: -70px;
 	} 
 	.stay-update:after, 
 	.stay-update:before { 

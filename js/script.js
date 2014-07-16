@@ -1,8 +1,11 @@
 var $dropdown_menu = $('#nav .dropdown-menu');
-console.log($(document));
-console.log($dropdown_menu);
-console.log($(".nav-li"));
-console.log($( document ).width() + " " + $dropdown_menu.width() + " " + screen.width + " " + $(".nav-li").width());
+var $dis = (screen.width - $dropdown_menu.width())/2;
+$dropdown_menu.css('left', $dis + 'px' );
+$dropdown_menu.css('right', $dis + 'px' );
 
-
-$dropdown_menu.css('left', (- screen.width + $dropdown_menu.width())/2 + 'px');
+$('.search-box').hover(function() {
+	/* Stuff to do when the mouse enters the element */	
+	$(this).siblings('#icon-search').css('background-color', 'transparent');	
+}, function() {
+	/* Stuff to do when the mouse leaves the element */
+});

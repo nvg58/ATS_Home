@@ -411,7 +411,7 @@ html {
 		&:before { 
 			border-color: transparent; 
 			border-left-color: rgb(7, 40, 64); 
-			border-width: 51px; 
+			// border-width: 51px; 
 		}
 	}	
 	.row {
@@ -422,22 +422,27 @@ html {
 		&:hover .subscribe {
 			.animation(bounceInRight 1s);
 		}
+		.subscribe {
+			margin-top: 35px;			
+			padding-left: 100px;
+		}
 	}
 	.input-email {
 		background-color: white;
 		border: none;
 		color: @dark-gray-color;
-		padding: 10px 35px 12px 35px;
-		.font-family-raleway-regular();
-		margin: 35px 0 35px 50px;
+		padding: 10px 35px;
+		margin-bottom: 5px;
+		.font-family-raleway-regular();		
 	}	
 	.btn-subscribe {
 		color: white;
 		background-color: @dark-blue-color;
 		.font-family-raleway-regular();
-		border-radius: 0;
-		margin: 35px 0 35px -35px;
-		padding: 10px 20px;
+		border-radius: 0;		
+		padding: 10px 25px;
+		margin-top: -3px;
+		border: none;
 		&:hover span {
 			display: block;
 			.scale(1.1);
